@@ -1,0 +1,122 @@
+<!doctype html><!--声明html版本编写指令  H5-->
+<html>
+	<head>
+		<!--声明页面编码  uft-8 国际编码-->
+		<meta charset="UTF-8">
+		<!--网站三要素 关键字  页面描述  标题-->
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>Document</title>
+		<style>
+		body{
+			margin:0;
+		}
+		.wrap{
+			width:100%;
+			height:520px;
+			background:url("img/dlbg.jpg") center;/*背景图片*/
+		}
+		.wrap-main{
+			/*position:absolute;觉对定位*/
+			width:80%;
+			height:520px;
+			margin:0 auto;/*上下 左右*/
+			overflow:hidden;/*超出部分隐藏*/
+		}
+		.login{
+			/* float:right;右浮动 */
+			/* position:absolute;绝对定位
+			right:0; */
+			overflow:hidden;
+			width:340px; 
+			height:320px;
+			background:#fff;
+			margin-left:auto;
+			margin-top:100px;
+		}
+		.login-info{
+			height:220px;
+			/* background:red; */
+			border-bottom:1px dotted #999;
+		}
+		input{
+			display:block;/*转换成块级元素*/
+			width:260px;
+			height:38px;
+			margin:30px auto;
+			border-radius:5px;/*CSS3新增圆角属性*/
+		}
+		input[name="user"]{
+			background:url("img/zhanghao.jpg") no-repeat;
+			text-indent:50px;
+			border:1px solid #ccc;
+			background-position-y:-2px;
+		}
+		input[name="pwd"]{
+			background:url("img/mima.jpg") no-repeat;
+			text-indent:50px;
+			border:1px solid #ccc;
+			background-position-y:-2px;
+		}
+		input[name="submit"]{
+			background:url("img/but.jpg") center;
+			border:0;
+		}
+		.content{
+			width:260px;
+			margin:20px auto;
+			font-size:14px;
+		}
+		i{
+			display:inline-block;/*转换位行内块元素*/
+			width:32px;
+			height:32px;
+		}
+		i.wechat{
+			background:url("img/weixin.png");
+		}
+		i.tencent{
+			background:url("img/qqlogin.png");
+		}
+		i.taobao{
+			background:url("img/taobao.png");
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="wrap-main">
+				<div class="login">
+					<div class="login-info">
+						<form action="/dologin" method="post">
+							<input type="text" placeholder="请输入用户名" name="user"/>
+							<input type="password" placeholder="请输入密码"  name="pwd"/>
+							<input type="submit" value=" " name="submit"/>
+						</form>
+					</div>
+					<div class="connet">
+						<p class="content">
+							合作网站账号登录：
+							<i class="wechat"></i>
+							<i class="tencent"></i>
+							<i class="taobao"></i>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--
+id     唯一  
+class  群体
+
+
+标签的目的  结构  不是实际存在
+CSS样式     表现  元素在页面中具体的表现
+
+浏览器会可能给每一个元素会添加一个默认的样式
+
+语义化原则
+
+-->
